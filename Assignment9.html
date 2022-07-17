@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!--William Wentworth-->
+
+<!--calls css-->
+<link rel="stylesheet" href="code.css">
+<html>
+<head>
+    <script src="dataLoader-1.js"></script>
+    <script src="launchDataDis.js"></script>
+    <script src="code.js"></script>
+    <script>
+        var theTime = new Date();
+        var time_interval = 5000;
+        var last_iteration = 0;
+        var running = true;
+        var index = 0;
+        var timer;
+        var data = getData();
+    </script>
+<!--sets title font-->
+<title>UAT Space Program</title>
+
+</head>
+
+<body>
+    <!--calls scripts-->
+
+<!--calls image-->
+<h1>
+<img src="UATspaceLogo-2.jpg">
+
+
+UAT Space Program
+</h1>
+
+<table id="data" border="2" width="70%">
+    <col style="width: 35%">
+    <col style="width: 35%">
+    <thread>
+        <th>
+            Data type
+        </th>
+        <th>
+            Reading
+        </th>
+    </thread>
+    <tbody>
+        <tr id="seconds"></tr>
+        <tr id="latitude"></tr>
+        <tr id="longitude"></tr>
+        <tr id="gps_altitude"></tr>
+        <tr id="bmp_altitude"></tr>
+        <tr id="bmp_pressure"></tr>
+        <tr id="bmp_temperature"></tr>
+        <tr id="dig_temperature"></tr>
+        <tr id="css_temperature"></tr>
+        <tr id="css_ec02"></tr>
+        <tr id="css_TVOC"></tr>
+        <tr id="UV"></tr>
+        <tr id="accelX"></tr>
+        <tr id="accelY"></tr>
+        <tr id="accelZ"></tr>
+        <tr id="magneticX"></tr>
+        <tr id="magneticY"></tr>
+        <tr id="magneticZ"></tr>
+        <tr id="gyroX"></tr>
+        <tr id="gyroY"></tr>
+        <tr id="gyroZ"></tr>
+    </tbody>
+</table>
+
+<input id="startButton" type="button" value="Start" div class="click" button onclick="startFun()" button class="button" id="1"></button>
+<input id="stopButton" type="button" value="Stop" div class="click" button onclick="stopFun()" button class="button"></button>
+
+
+</body>
+
+
+
+
+
+</html>
